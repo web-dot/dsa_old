@@ -17,6 +17,15 @@ public class SortingAlgorithms {
 		return arr;
 	}
 	
+	/**
+	 * repeat (numOfElements - 1) times
+	 * 	set the first unordered element as minimum
+	 * 	for each unsorted elements 
+	 * 		if element < currentMinimum
+	 * 			set element as new minimum
+	 * swap minimum with first unsorted position
+	 * */
+	
 	private static int[] selectionSort(int[] arr) {
 		for(int i=0; i<arr.length-1; i++) {
 			int min = i;
