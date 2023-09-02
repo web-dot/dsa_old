@@ -29,8 +29,8 @@ public class SortingAlgorithms {
 	private static int[] selectionSort(int[] arr) {
 		for(int i=0; i<arr.length-1; i++) {
 			int min = i;
-			System.out.println("min =" + arr[min]);
 			System.out.println("arr[i] =" + arr[i]);
+			System.out.println("arr[min] =" + arr[min]);
 			for(int j=i+1; j<arr.length; j++) {
 				System.out.println("arr[j] =" + arr[j]);
 				if(arr[j] < arr[min]) {
@@ -38,6 +38,7 @@ public class SortingAlgorithms {
 					System.out.println("new min =" + arr[min]);
 				}
 			}
+			System.out.println("swapping " + arr[i] + " with " + arr[min]);
 			int temp = arr[min];
 			arr[min] = arr[i];
 			arr[i] = temp;
