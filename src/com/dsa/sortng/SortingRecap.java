@@ -18,6 +18,11 @@ public class SortingRecap {
 	}
 	
 	
+	public static int[] selectionSort(int[] arr) {
+		
+		return null;
+	}
+	
 
 	public static void main(String[] args) {
 		int[] arr = {4, 3, 1, 2};
